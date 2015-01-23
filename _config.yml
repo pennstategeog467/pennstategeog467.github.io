@@ -31,7 +31,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Penn State Geography 467 Class of 2015
+  name: Class of GEOG 467 at Penn State
   avatar: bio-photo.jpg
   email:
   disqus-shortname:
