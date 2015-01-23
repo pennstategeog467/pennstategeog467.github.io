@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Assignment 1
-excerpt: "Mapping web cartography terms"
+title: Assignment 1 - Intro to web mapping terms
+excerpt: "Concept maps of web cartography terms"
 modified: 2015-1-23
-tags: [assignment, introduction]
+tags: 
 comments: true
 image:
   feature: 
