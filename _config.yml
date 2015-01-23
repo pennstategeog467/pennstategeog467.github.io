@@ -30,8 +30,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 
 # Site owner
-owner: Aaron Dennis
-  name: Aaron Dennis
+owner:
+  name: Penn State Geography 467 Class of 2015
   avatar: bio-photo.jpg
   email:
   disqus-shortname:
