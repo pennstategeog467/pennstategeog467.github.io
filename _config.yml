@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Site Title
+title: Geography 467 at Penn Sate
 locale: en_US
-description: Describe your website here.
+description: Introduction to web mapping and applications for campus maps.
 logo: site-logo.png
 search: true
 url: http://pennstategeog467.github.io
@@ -31,13 +31,13 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  email: you@email.com
+  name: Aaron Dennis
+  avatar: #bio-photo.jpg
+  email: aaron.p.dennis@gmail.com
   disqus-shortname:
-  twitter: #username
+  twitter: @aaronpdennis
   facebook: #username
-  github: #username
+  github: aaronpdennis
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   instagram: #username
