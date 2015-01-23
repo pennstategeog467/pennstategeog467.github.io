@@ -32,7 +32,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Aaron Dennis
-  avatar: #bio-photo.jpg
+  avatar: bio-photo.jpg
   email: aaron.p.dennis@gmail.com
   disqus-shortname:
   twitter: @aaronpdennis
