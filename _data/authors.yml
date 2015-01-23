@@ -1,20 +1,20 @@
 # Authors
 
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
+aaron_dennis:
+  name: Aaron Dennis
+  web: http://aaronpdennis.github.io
+  email: aaron.p.dennis@gmail.com
+  bio: "Teaching Assistant"
+  avatar: 
+  twitter: aaronpdennis
   google:
-    plus: BillyRick
+    plus: 
 
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
+cindy_brewer:
+  name: Cindy Brewer
+  email: cbrewer@psu.edu
+  bio: "Professor"
+  avatar: 
+  twitter: 
   google:
-    plus: CorneliusFiddlebone
+    plus: 
