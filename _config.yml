@@ -31,7 +31,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner: Penn State Department of Geography
-  name: 
+  name: PSU Geography
   avatar: bio-photo.jpg
   email:
   disqus-shortname:
