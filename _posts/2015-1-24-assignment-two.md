@@ -16,7 +16,7 @@ This assignment will introduce you to OpenStreetMap feature tracing and tagging.
 
 ## Tracing Assignments
 
-In the map below you can see State College, Pennsylvania divided into indivual sections by pink polygons. The map also shows the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated with the OpenStreetMap (OSM) database. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. Explore the map until you find your section.
+In the map below you can see State College, Pennsylvania divided into indivual sections by pink polygons. In red, the map also shows the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated with the OpenStreetMap (OSM) database. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. Explore the map until you find your section.
 
 <figure>
   <iframe src="http://aaronpdennis.github.io/geog467-osm-sc-assignments/" style="height:400px;width:100%;"></iframe>
@@ -84,4 +84,4 @@ I've built an interface at http://aaronpdennis.github.io/geojson-to-gpx/ to help
 
 ### Opening Your Tracing Assignment in the iD Editor
 
-You're now almost ready to start contributing to OSM. Go to http://www.openstreetmap.org, log in to your account, and click Edit.
+You're now almost ready to start contributing to OSM. Go to http://openstreetmap.org, log in to your account, and click Edit.
