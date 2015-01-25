@@ -35,4 +35,6 @@ We'll be using the GPX files for a less conventional purpose (designating assign
 
 So let's make the GPX file you need and start mapping.
 
-A GeoJSON file is just a text file. You can open it, copy and paste all the text it into another place, and it will still be GeoJSON. I have placed all the GeoJSON for the tracing assignments in <a href="TODO">another post--open it in a new tab.</a>
+A GeoJSON file is just a text file. You can open it, copy and paste all the text it into another place, and it will still be GeoJSON. I have placed all the GeoJSON for the tracing assignments in <a href="/geojson-tracing-assignments/">another post--open it in a new tab.</a>
+
+This is the GeoJSON, and it probably looks like a long and confusing list of brackets, 
