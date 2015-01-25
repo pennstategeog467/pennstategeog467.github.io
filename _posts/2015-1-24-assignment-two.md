@@ -35,6 +35,8 @@ We'll be using the GPX files for a less conventional purpose (designating assign
 
 So let's make the GPX file you need and start mapping.
 
+### Select Your Assignment from the GeoJSON
+
 A GeoJSON file is just a text file. You can open it, copy and paste all the text it into another place, and it will still be GeoJSON. I have placed all the GeoJSON for the tracing assignments in <a href="/geojson-tracing-assignments/">another post--open it in a new tab.</a>
 
 This is the GeoJSON, and at first it probably looks like a long and confusing list of brackets, numbers, and punctuation. Let's start with the first three lines and the last two.
@@ -70,7 +72,16 @@ These are the lines that set up everything else. These lines set up what's known
 }
 </code></pre>
 
-Within the square brackets `[]` of the features property we see another curly brace `{` followed by the familiar `type` property. This time, the value of the `type` property is just `Feature`, not `FeatureCollection`. That's because we're now looking the GeoJSON data for a single polygon representing an individual tracing assignment. The three properties of this `Feature` object are `type`, `properties`, and `geometry`. To make an analogy to Shapefiles, `properties` contains all of the feature's attribute information, like the .dbf file, and `geometry` contains information identifying what type of feature it is and a listing of all the vertices of the shape, like the .shp file.
+Within the square brackets `[]` of the features property we see another curly brace `{` followed by the familiar `type` property. This time, the value of the `type` property is just `Feature`, not `FeatureCollection`. That's because we're now looking the GeoJSON data for a single polygon representing an individual tracing assignment. The three properties of this `Feature` object are `type`, `properties`, and `geometry`. To make an analogy to Shapefiles, `properties` contains all of the feature's attribute information, like the .dbf file, and `geometry` contains information identifying what type of feature it is and a listing of all the coordinates for the vertices of the feature, like the .shp file.
 
-To select your tracing assignment boundaries `Polygon` `Feature` from within all of the features, you'll need to create a GeoJSON with list of `"features": [...]` that includes only your `Feature`. The tool at http://geojson.io will set you up with an empty GeoJSON `FeatureCollection` you can copy and paste your `Feature` into, or you can copy and paste all the GeoJSON text I have provided into the text pane at geojson.io and edit it down to just your assigned feature.
+To select your tracing assignment boundaries `Polygon` `Feature` from within all of the features, you'll need to create a GeoJSON with list of `"features": [...]` that includes only your `Feature`. The tool at http://geojson.io will set you up with an empty GeoJSON `FeatureCollection` you can copy and paste your `Feature` into, or you can copy and paste all the GeoJSON text I have provided into the text pane at http://geojson.io and edit it down to just your assigned feature.
 
+### Convert Your GeoJSON to a GPX File
+
+Now that you have your assigned area in GeoJSON format, it's time to make a quick conversion to GPX. Why didn't we just make a GPX file in the first place? Because GPX files don't play as well with web mapping APIs like Leaflet or Mapbox GL, aren't as readable, and you're much less likely to run into them. Plus, GPX files can't actually draw polygons, just lines around their edges.
+
+I've made an interface at http://aaronpdennis.github.io/geojson-to-gpx/ to help us convert the data. Paste your GeoJSON into the top box, click the button, and then copy and paste the code in the bottom box into a blank text document on your computer (use a basic text editor like NotePad on Windows or TextEdit on Mac OS X). Save that file with the extension *.gpx*.
+
+### Opening Your Tracing Assignment in the iD Editor
+
+You're now almost ready to start contributing to OSM. Go to http://openstreetmap.org, log in to your account, and click edit.
