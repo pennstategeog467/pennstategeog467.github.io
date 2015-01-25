@@ -82,6 +82,10 @@ Now that you have your assigned area in GeoJSON format, it's time to make a quic
 
 I've built an interface at http://aaronpdennis.github.io/geojson-to-gpx/ to help us convert the data. Paste your GeoJSON into the top box, click the button, and then copy and paste the code in the bottom box into a blank text document on your computer (use a basic text editor like NotePad on Windows or TextEdit on Mac OS X). Save that file with the extension *.gpx*.
 
-### Opening Your Tracing Assignment in the iD Editor
+# Editing OpenStreetMap with the iD Editor
 
-You're now almost ready to start contributing to OSM. Go to <a href="http://www.openstreetmap.org">OpenStreetMap.org</a>, log in to your account, and click Edit.
+You're now almost ready to start contributing to OSM. Go to <a href="http://www.openstreetmap.org">OpenStreetMap.org</a>, log in to your account, zoom to State College, and click Edit. This will bring you into the iD Editor. You will see an option on the screen to start a walkthrough of the editor's functionality and or begin editing immediately. Choose the walkthrough the first time.
+
+After the walkthrough, choose begin editing. The first thing we'll do is drag and drop the GPX file you saved on the computer into the iD Editor. If your GeoJSON to GPX conversion process went without any mistakes, you'll see your assigned area rendered on the map. Now, you can start editing.
+
+Your job is to trace all visible buildings inside your assigned area and tag them appropriately. We will talk about how to properly contribute to OSM in class.
