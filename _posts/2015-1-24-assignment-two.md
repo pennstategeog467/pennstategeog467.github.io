@@ -14,7 +14,7 @@ image:
 
 This assignment will introduce you to OpenStreetMap feature tracing and tagging. You will also learn a little bit about open data formats and the print functionality in Mapbox Studio.
 
-## Tracing Assignments
+# Tracing Assignments
 
 In the map below you can see State College, Pennsylvania divided into indivual sections by pink polygons. The red polygons on the map show the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated with the OpenStreetMap (OSM) database. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. Explore the map until you find your section.
 
@@ -27,7 +27,7 @@ The map above renders the assigned sections by referencing a GeoJSON file. Think
 
 As you know, OpenStreetMap is a collaborative database that lots of people can contribute to at the same time. This also means sometimes people are unknowingly editing the same part of the map at the same time, which causes obvious issues and ends up wasting everyone's time. That's why we have gone through all this trouble of dividing our mapping project--buildings in State College--into different sections. You'll be able to display the boundary of your assigned section in the OSM iD Editor as you're editing so that you don't step on the toes of anyone else working on the map (like the other people in this class) and they will stay clear of your section. To do that, we'll have to take a closer look at that GeoJSON file, pull out the data relevant to you, and convert it to a data format supported by the iD Editor called a GPX file.
 
-## Referencing Your Assignment in the iD Editor
+### Referencing Your Assignment in the iD Editor
 
 To display your tracing assignment for reference in the iD Editor, we'll need to extract your specific polygon feature from the GeoJSON file and create a GPX file. Why does it need to be in a GPX file? This particular type of file has a long history with OSM and, consequently, all of the modern OSM editing tools, like the iD Editor, provide great functionality for this data format. A GPX file is what GPS receivers generate when you mark waypoints or create tracks. They were especially useful in the early days of OSM when the primary method of adding roads and other features was not through tracing satellite imagery, but uploading, tracing, and editting data collected in the field by contributors with GPS receivers. This is still a useful method today for collecting geographic data about things like trails, which often can't be seen from space, or in places where high resolution imagery isn't available.
 
