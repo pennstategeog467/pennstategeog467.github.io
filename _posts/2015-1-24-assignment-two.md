@@ -37,4 +37,36 @@ So let's make the GPX file you need and start mapping.
 
 A GeoJSON file is just a text file. You can open it, copy and paste all the text it into another place, and it will still be GeoJSON. I have placed all the GeoJSON for the tracing assignments in <a href="/geojson-tracing-assignments/">another post--open it in a new tab.</a>
 
-This is the GeoJSON, and it probably looks like a long and confusing list of brackets, 
+This is the GeoJSON, and at first it probably looks like a long and confusing list of brackets, numbers, and punctuation. Let's start with the first three lines and the last two.
+
+<pre><code>
+{
+  "type": "FeatureCollection",
+  "features": [
+...
+  ]
+}
+</code></pre>
+
+These are the lines that set up everything else. These lines set up what's known as an object in Javascript. The object is a list of properties between the two curly brackets on the first and last lines `{}`. One of those properties is `"type"`--in this case the type of object is a collection of geographic features, or a `"FeatureCollection"` and the second property is `"features"`. Inside the features you'll find another list of objects--a feature collection--contained within the two square brackets `[]`.
+
+<pre><code>
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "contributor": "Aaron Dennis"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+        ...
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+
