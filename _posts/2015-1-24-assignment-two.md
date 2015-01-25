@@ -80,8 +80,8 @@ To select your tracing assignment boundaries `Polygon` `Feature` from within all
 
 Now that you have your assigned area in GeoJSON format, it's time to make a quick conversion to GPX. Why didn't we just make a GPX file in the first place? Because GPX files don't play as well with web mapping APIs like Leaflet or Mapbox GL, aren't as readable, and you're much less likely to run into them. Plus, GPX files can't actually draw polygons, just lines around their edges.
 
-I've made an interface at http://aaronpdennis.github.io/geojson-to-gpx/ to help us convert the data. Paste your GeoJSON into the top box, click the button, and then copy and paste the code in the bottom box into a blank text document on your computer (use a basic text editor like NotePad on Windows or TextEdit on Mac OS X). Save that file with the extension *.gpx*.
+I've built an interface at http://aaronpdennis.github.io/geojson-to-gpx/ to help us convert the data. Paste your GeoJSON into the top box, click the button, and then copy and paste the code in the bottom box into a blank text document on your computer (use a basic text editor like NotePad on Windows or TextEdit on Mac OS X). Save that file with the extension *.gpx*.
 
 ### Opening Your Tracing Assignment in the iD Editor
 
-You're now almost ready to start contributing to OSM. Go to http://openstreetmap.org, log in to your account, and click edit.
+You're now almost ready to start contributing to OSM. Go to http://www.openstreetmap.org, log in to your account, and click Edit.
