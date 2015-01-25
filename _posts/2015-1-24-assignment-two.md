@@ -48,7 +48,7 @@ This is the GeoJSON, and at first it probably looks like a long and confusing li
 }
 </code></pre>
 
-These are the lines that set up everything else. These lines set up what's known as an object in Javascript. The object is a list of properties between the two curly brackets on the first and last lines `{}`. One of those properties is `"type"`--in this case the type of object is a collection of geographic features, or a `"FeatureCollection"` and the second property is `"features"`. Inside the features you'll find another list of objects--a feature collection--contained within the two square brackets `[]`.
+These are the lines that set up everything else. These lines set up what's known as an object in Javascript. The object is a list of properties between the two curly braces on the first and last lines `{}`. One of those properties is `type`--in this case the value of the type property of the object is a collection of geographic features, or a `FeatureCollection` and the second property is `features`. Inside the features you'll find another list of objects--a feature collection--contained within the two square brackets `[]`.
 
 <pre><code>
 {
@@ -69,4 +69,8 @@ These are the lines that set up everything else. These lines set up what's known
   ]
 }
 </code></pre>
+
+Within the square brackets `[]` of the features property we see another curly brace `{` followed by the familiar `type` property. This time, the value of the `type` property is just `Feature`, not `FeatureCollection`. That's because we're now looking the GeoJSON data for a single polygon representing an individual tracing assignment. The three properties of this `Feature` object are `type`, `properties`, and `geometry`. To make an analogy to Shapefiles, `properties` contains all of the feature's attribute information, like the .dbf file, and `geometry` contains information identifying what type of feature it is and a listing of all the vertices of the shape, like the .shp file.
+
+To select your tracing assignment boundaries `Polygon` `Feature` from within all of the features, you'll need to create a GeoJSON with list of `"features": [...]` that includes only your `Feature`. The tool at http://geojson.io will set you up with an empty GeoJSON `FeatureCollection` you can copy and paste your `Feature` into, or you can copy and paste all the GeoJSON text I have provided into the text pane at geojson.io and edit it down to just your assigned feature.
 
