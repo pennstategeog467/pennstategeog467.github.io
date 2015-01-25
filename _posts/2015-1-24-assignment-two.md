@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assignment 2 - Contributing to OpenStreetMap; also GeoJSON and Mapbox Studio fun!
+title: Assignment 2 - Contributing to OpenStreetMap + GeoJSON & Mapbox Studio fun!
 excerpt: "Assignments for OpenStreetMap editting exercise."
 modified: 2015-1-24
 tags: 
