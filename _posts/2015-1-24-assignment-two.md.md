@@ -16,5 +16,5 @@ This assignment will introduce you to OpenStreetMap feature tracing and tagging.
 
 ## Tracing Assignments
 
-In the map below you can see State College divided into sections which, as of January 24, 2015, could benefit from someone going through and tracing building outlines. Each section is assigned to a specific contributor. Explore the map until you find your section.
+In the map below you can see State College, Pennsylvania divided into indivual sections by pink polygons. The map also shows the `#buildings` layer from Mapbox Streets, a global vector tile source built and regularly updated with the OpenStreetMap (OSM) database. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. Explore the map until you find your section.
 
