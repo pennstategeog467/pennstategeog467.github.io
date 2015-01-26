@@ -19,7 +19,7 @@ This assignment will introduce you to OpenStreetMap feature tracing and tagging.
 In the map below you can see State College, Pennsylvania divided into indivual sections by pink polygons. The dark grey shapes on the map show the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated from the OpenStreetMap (OSM) database. Any changes to OSM will be reflected on this map within minutes. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. You will be using the OSM iD Editor to add building content in your assigned area. Explore the map by clicking on the pink shapes to see who was assigned to each section.
 
 <figure>
-  <iframe src="http://aaronpdennis.github.io/geog467-osm-sc-assignments/" style="height:400px;width:100%;"></iframe>
+  <iframe src="http://aaronpdennis.github.io/geog467-osm-sc-assignments/" style="height:400px;width:100%;" frameBorder="0"></iframe>
   <figcaption>Click on the pink shapes to see your assigned area for contributing to OSM.</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ To select your tracing assignment boundaries `Polygon` `Feature` from within all
 
 Now that you have your assigned area in GeoJSON format, it's time to make a quick conversion to GPX. Why didn't we just make a GPX file in the first place? Because GPX files don't play as well with web mapping APIs like Leaflet or Mapbox GL, aren't as readable, and you're much less likely to run into them. Plus, GPX files can't actually draw polygons, just lines around their edges.
 
-I've built an interface at http://aaronpdennis.github.io/geojson-to-gpx/ to help us convert the data. Paste your GeoJSON into the top box, click the button, and then copy and paste the code in the bottom box into a blank text document on your computer (use a basic text editor like NotePad on Windows or TextEdit on Mac OS X). Save that file with the extension *.gpx*.
+I've built an interface at <a href="http://aaronpdennis.github.io/geojson-to-gpx/">http://aaronpdennis.github.io/geojson-to-gpx/</a> to help us convert the data. Paste your GeoJSON into the top box, click the button, and then copy and paste the code in the bottom box into a blank text document on your computer (use a basic text editor like NotePad on Windows or TextEdit on Mac OS X). Save that file with the extension *.gpx*.
 
 # Editing OpenStreetMap with the iD Editor
 
