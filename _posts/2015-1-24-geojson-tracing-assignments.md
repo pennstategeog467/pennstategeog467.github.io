@@ -12,7 +12,7 @@ image:
   creditlink: 
 ---
 
-Below is the tracing assignments in GeoJSON format.
+Below are the tracing assignments in GeoJSON format.
 
 To copy and paste everything, find the raw text file <a href="https://raw.githubusercontent.com/aaronpdennis/geog467-osm-sc-assignments/gh-pages/assignments.geojson">here</a>, press `control` + `a` (Windows) or `command` + `a` (Mac) on your keyboard, then copy and paste.
 
