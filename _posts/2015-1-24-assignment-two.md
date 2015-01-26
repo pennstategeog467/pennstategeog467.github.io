@@ -16,11 +16,11 @@ This assignment will introduce you to OpenStreetMap feature tracing and tagging.
 
 # Tracing Assignments
 
-In the map below you can see State College, Pennsylvania divided into indivual sections by pink polygons. The red polygons on the map show the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated with the OpenStreetMap (OSM) database. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. Explore the map until you find your section.
+In the map below you can see State College, Pennsylvania divided into indivual sections by pink polygons. The dark grey shapes on the map show the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated from the OpenStreetMap (OSM) database. Any changes to OSM will be reflected on this map within minutes. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. You will be using the OSM iD Editor to add building content in your assigned area. Explore the map by clicking on the pink shapes to see who was assigned to each section.
 
 <figure>
   <iframe src="http://aaronpdennis.github.io/geog467-osm-sc-assignments/" style="height:400px;width:100%;"></iframe>
-  <figcaption>This map was built with Mapbox GL. You'll need to be in a modern web browser like Chrome or Firefox to view it properly.</figcaption>
+  <figcaption>Click on the pink shapes to see your assigned area for contributing to OSM.</figcaption>
 </figure>
 
 The map above renders the assigned sections by referencing a GeoJSON file. Think of a GeoJSON file as similar to a Shapefile in that it contains vector geographic data, but it's a single text file that is human readable, instead of several files with information about geometry in one file, related attributes in a second, and projection information in yet another. We use GeoJSON on the web because the text within the file is directly readable as data in Javascript. You'll want to have a solid understanding of this data format for the next part of the exercise. Read more about GeoJSON <a href="http://giscollective.org/github-bringing-geojson-to-life-since-2013/">here</a>.
