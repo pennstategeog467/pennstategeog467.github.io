@@ -12,7 +12,7 @@ image:
   creditlink: 
 ---
 
-This assignment will introduce you to OpenStreetMap feature tracing and tagging. You will also learn a little bit about open data formats and the print functionality in Mapbox Studio. The steps we'll take to contribute to OpenStreetMap effectively and collaboratively are as follows:
+This assignment will introduce you to OpenStreetMap feature tracing and tagging. The steps we'll take to contribute to OpenStreetMap effectively and collaboratively are as follows:
 
 1. Sign up as a contributor to OpenStreetMap
   * make an account
@@ -27,10 +27,6 @@ This assignment will introduce you to OpenStreetMap feature tracing and tagging.
   * begin tracing buildings within your area
   * tag buildings appropriately and square building polygons
   * regularly save edits
-4. Track progress by creating a before and after map with Mapbox Studio
-  * create a Mapbox account
-  * open the OSM Bright style in Mapbox Studio
-  * reference provided coordinates/dimensions and generate a map of contributed data
 
 # 1. Become an OpenStreetMap Contributor
 
