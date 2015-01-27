@@ -34,11 +34,11 @@ This assignment will introduce you to OpenStreetMap feature tracing and tagging.
 
 # 1. Become an OpenStreetMap Contributor
 
-The first thing we'll do is get acquainted to OpenStreetMap (OSM). Go to <a href="https://www.openstreetmap.org/user/new" target="_blank">https://www.openstreetmap.org/user/new</a> and make a new account. Once you've created an account, zoom to State College on the main map. Once you zoom in far enough, you'll be able to click "Edit" at the top of the page.
+The first thing we'll do is get acquainted to OpenStreetMap (OSM). Go to <a href="https://www.openstreetmap.org/user/new" target="_blank">https://www.openstreetmap.org/user/new</a> and make a new account. After you've created an account, zoom to State College on the main map. Zoom in far enough and you'll be able to click "Edit" at the top of the page.
 
 This will bring you to the iD Editor. The first thing you'll see a a welcome box with an option to start a walkthrough of the editor's functionality. Do this now.
 
-Once
+Once you have completed the walkthrough, go to State College and try tracing a single building. Great. We'll do a lot more of this later.
 
 # 2. Tracing Assignments
 
