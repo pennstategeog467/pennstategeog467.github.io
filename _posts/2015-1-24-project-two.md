@@ -102,7 +102,7 @@ Within the square brackets `[]` of the features property we see another curly br
 
 To select your tracing assignment boundary's `Polygon` `Feature` from within all of the features, you'll need to create a GeoJSON with list of `"features": [...]` that includes only your `Feature`. The tool at <a href="http://geojson.io" target="_blank">http://geojson.io</a> will set you up with an empty GeoJSON `FeatureCollection` you can copy and paste your `Feature` into, or you can copy and paste all the GeoJSON text I have provided into the text pane at <a href="http://geojson.io" target="_blank">http://geojson.io</a> and edit it down to just your assigned feature.
 
-#### 2.c Convert Your GeoJSON to a GPX File
+#### 2c. Convert Your GeoJSON to a GPX File
 
 Now that you have your assigned area in GeoJSON format, it's time to make a quick conversion to GPX. Why didn't we just make a GPX file in the first place? Because GPX files don't play as well with web mapping APIs like Leaflet, aren't as readable, and you're much less likely to use them in general. Plus, GPX files can't actually draw polygons, just the edges of the polygon.
 
