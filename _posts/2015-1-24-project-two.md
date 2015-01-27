@@ -15,22 +15,22 @@ image:
 This assignment will introduce you to OpenStreetMap feature tracing and tagging. You will also learn a little bit about open data formats and the print functionality in Mapbox Studio. The steps we'll take to contribute to OpenStreetMap effectively and collaboratively are as follows:
 
 1. Sign up as a contributor to OpenStreetMap
-  1. make an account
-  2. go through the iD Editor Walkthrough
-  3. practice tracing a building in State College
+  * make an account
+  * go through the iD Editor Walkthrough
+  * practice tracing a building in State College
 2. Organize group mapping effort by assigning areas to specific contributors
-  1. identify your assigned area
-  2. select your area from a larger GeoJSON file
-  3. convert your assigned area data from GeoJSON to a GPX file
+  * identify your assigned area
+  * select your area from a larger GeoJSON file
+  * convert your assigned area data from GeoJSON to a GPX file
 3. Edit OpenStreetMap within your assigned area
-  1. display your assigned area as a GPX file in the iD Editor
-  2. begin tracing buildings within your area
-  3. tag buildings appropriately and square building polygons
-  4. regularly save edits
+  * display your assigned area as a GPX file in the iD Editor
+  * begin tracing buildings within your area
+  * tag buildings appropriately and square building polygons
+  * regularly save edits
 4. Track progress by creating a before and after map with Mapbox Studio
-  1. create a Mapbox account
-  2. open the OSM Bright style in Mapbox Studio
-  3. reference provided coordinates/dimensions and generate a map of contributed data
+  * create a Mapbox account
+  * open the OSM Bright style in Mapbox Studio
+  * reference provided coordinates/dimensions and generate a map of contributed data
 
 # 1. Become an OpenStreetMap Contributor
 
