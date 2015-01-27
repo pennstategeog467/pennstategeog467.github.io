@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assignment 2 - Contributing to OpenStreetMap + GeoJSON & Mapbox Studio fun!
+title: Project 2 - A Collaborative Mapping Effort
 excerpt: "Assignments for OpenStreetMap editting exercise."
 modified: 2015-1-24
 tags: 
@@ -12,11 +12,37 @@ image:
   creditlink: 
 ---
 
-This assignment will introduce you to OpenStreetMap feature tracing and tagging. You will also learn a little bit about open data formats and the print functionality in Mapbox Studio.
+This assignment will introduce you to OpenStreetMap feature tracing and tagging. You will also learn a little bit about open data formats and the print functionality in Mapbox Studio. The steps we'll take to contribute to OpenStreetMap effectively and collaboratively are as follows:
 
-# Tracing Assignments
+1. Sign up as a contributor to OpenStreetMap
+  1. make an account
+  2. go through the iD Editor Walkthrough
+  3. practice tracing a building in State College
+2. Organize group mapping effort by assigning areas to specific contributors
+  1. identify your assigned area
+  2. select your area from a larger GeoJSON file
+  3. convert your assigned area data from GeoJSON to a GPX file
+3. Edit OpenStreetMap within your assigned area
+  1. display your assigned area as a GPX file in the iD Editor
+  2. begin tracing buildings within your area
+  3. tag buildings appropriately and square building polygons
+  4. regularly save edits
+4. Track progress by creating a before and after map with Mapbox Studio
+  1. create a Mapbox account
+  2. open the OSM Bright style in Mapbox Studio
+  3. reference provided coordinates/dimensions and generate a map of contributed data
 
-In the map below you can see State College divided into indivual sections by pink polygons. The dark grey shapes on the map show the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated from the OpenStreetMap (OSM) database. Any changes to OSM will be reflected on this map within minutes. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. You will be using the OSM iD Editor to add building content in your assigned area. Explore the map by clicking on the pink shapes to see who was assigned to each section.
+# 1. Become an OpenStreetMap Contributor
+
+The first thing we'll do is get acquainted to OpenStreetMap (OSM). Go to <a href="https://www.openstreetmap.org/user/new" target="_blank">https://www.openstreetmap.org/user/new</a> and make a new account. Once you've created an account, zoom to State College on the main map. Once you zoom in far enough, you'll be able to click "Edit" at the top of the page.
+
+This will bring you to the iD Editor. The first thing you'll see a a welcome box with an option to start a walkthrough of the editor's functionality. Do this now.
+
+Once
+
+# 2. Tracing Assignments
+
+In the map below you can see State College divided into indivual sections by pink polygons. The dark grey shapes on the map show the `#building` layer from Mapbox Streets, a global vector tile source built and regularly updated from the OSM database. Any changes to OSM will be reflected on this map within minutes. As of January 24, 2015, many areas of the OSM database in State College could benefit from someone going through and tracing building outlines. We have assigned each section to a specific contributor. You will be using the OSM iD Editor to add building content in your assigned area. Explore the map by clicking on the pink shapes to see who was assigned to each section.
 
 <figure>
   <iframe src="http://aaronpdennis.github.io/geog467-osm-sc-assignments/" style="height:400px;width:100%;" frameBorder="0"></iframe>
@@ -27,7 +53,7 @@ The map above renders the assigned sections by referencing a GeoJSON file. Think
 
 As you know, OpenStreetMap is a collaborative database that lots of people can contribute to at any time. This also means sometimes people are unknowingly editing the same part of the map at the same time, which causes issues and ends up wasting everyone's time. That's why we have gone through all this trouble of dividing our mapping project--tracing buildings in State College--into different sections. You'll be able to display the boundary of your assigned section in the OSM iD Editor as you're editing so that you don't step on the toes of anyone else working on the map (like the other people in this class) and they will stay clear of your section. To do that, we'll have to take a closer look at that GeoJSON file, pull out the data relevant to you, and convert it to a data format supported by the iD Editor called a GPX file.
 
-### Referencing Your Assignment in the iD Editor
+#### 2a. Referencing Your Assignment in the iD Editor
 
 To display your tracing assignment for reference in the iD Editor, we'll need to extract your specific polygon feature from the GeoJSON file and create a GPX file. Why does it need to be a GPX file? This particular type of file has a long history with OSM and, consequently, all of the modern OSM editing tools, like the iD Editor, provide great functionality for this data format. A GPX file is what GPS receivers generate when you mark waypoints or create tracks while walking around in the field. They were especially useful in the early days of OSM when the primary method of adding roads and other features was not through tracing satellite imagery, but uploading, tracing, and editting data collected by contributors with GPS receivers. This is still a useful method today for collecting geographic data about things like trails, which often can't be seen from space, or in places where high resolution imagery isn't available.
 
@@ -35,7 +61,7 @@ We'll be using the GPX files for the less conventional purpose of designating as
 
 So let's make the GPX file you need and start mapping.
 
-### Select Your Assignment from the GeoJSON
+#### 2b. Select Your Assignment from the GeoJSON
 
 A GeoJSON file is just a text file. You can open it, copy and paste all the text it into another place, and it will still be GeoJSON. You can find the GeoJSON for the tracing assignments <a href="https://raw.githubusercontent.com/aaronpdennis/geog467-osm-sc-assignments/gh-pages/assignments.geojson" target="_blank">here.</a>
 
@@ -76,13 +102,13 @@ Within the square brackets `[]` of the features property we see another curly br
 
 To select your tracing assignment boundary's `Polygon` `Feature` from within all of the features, you'll need to create a GeoJSON with list of `"features": [...]` that includes only your `Feature`. The tool at <a href="http://geojson.io" target="_blank">http://geojson.io</a> will set you up with an empty GeoJSON `FeatureCollection` you can copy and paste your `Feature` into, or you can copy and paste all the GeoJSON text I have provided into the text pane at <a href="http://geojson.io" target="_blank">http://geojson.io</a> and edit it down to just your assigned feature.
 
-### Convert Your GeoJSON to a GPX File
+#### 2.c Convert Your GeoJSON to a GPX File
 
 Now that you have your assigned area in GeoJSON format, it's time to make a quick conversion to GPX. Why didn't we just make a GPX file in the first place? Because GPX files don't play as well with web mapping APIs like Leaflet, aren't as readable, and you're much less likely to use them in general. Plus, GPX files can't actually draw polygons, just the edges of the polygon.
 
 I've built an interface at <a href="http://aaronpdennis.github.io/geojson-to-gpx/" target="_blank">http://aaronpdennis.github.io/geojson-to-gpx/</a> to help us convert the data. Paste your GeoJSON into the top box, click the button, and then copy and paste the code in the bottom box into a blank text document on your computer (use a basic text editor like Notepad on Windows or TextEdit on Mac OS X). Save that file with the extension *.gpx*.
 
-# Editing OpenStreetMap with the iD Editor
+# 3. Editing OpenStreetMap with the iD Editor
 
 You're now almost ready to start contributing to OSM. Go to <a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap.org</a>, log in to your account, zoom to State College, and click Edit. This will bring you into the iD Editor. You will see an option on the screen to start a walkthrough of the editor's functionality or begin editing immediately. Choose the walkthrough for your first time.
 
