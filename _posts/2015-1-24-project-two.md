@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project 2 - A Collaborative Mapping Effort
-excerpt: "Assignments for OpenStreetMap editting exercise."
+excerpt: "Assignments for OpenStreetMap editing exercise."
 modified: 2015-1-24
 tags: 
 author: aaron_dennis
