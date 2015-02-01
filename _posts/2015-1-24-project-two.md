@@ -27,6 +27,13 @@ This assignment will introduce you to OpenStreetMap feature tracing and tagging.
   * begin tracing buildings within your area
   * tag buildings appropriately and square building polygons
   * regularly save edits
+4. Creating before and after maps with Mapbox Studio
+  * create a free Mapbox starter account
+  * open our custom style in Mapbox Studio
+  * add and style vector tile source of our assigned areas
+  * export after-tracing image of your area
+  * adjust style sheet to show old building data
+  * export before-tracing image of your area at same dimensions
 
 # 1. Become an OpenStreetMap Contributor
 
@@ -111,3 +118,27 @@ You're now almost ready to start contributing to OSM. Go to <a href="http://www.
 After the walkthrough, click begin editing. The first thing we'll do is drag and drop the GPX file you saved on the computer into the iD Editor. If your GeoJSON to GPX conversion process went without any mistakes, you'll see your assigned area rendered on the map. Now, you can start editing.
 
 Your job is to trace all visible buildings inside your assigned area and tag them appropriately. We will talk about how to properly trace and tag OSM features in class.
+
+# 4. Creating before and after maps in Mapbox Studio
+
+Once you have thoroughly and accurately traced all buildings within your assigned area and you've added field-gathered address numbers for at least twenty of thos buildings, you'll be ready to create the following final deliverables for this project:
+
+1. A **300ppi PNG image** exported from Mapbox Studio at **zoom level 17** showing buildings and house numbers data from your area **before** tracing.
+2. A **300ppi PNG image** exported from Mapbox Studio at **zoom level 17** showing buildings and house numbers data from your area **after** tracing.
+
+#### 4a. Sign up for a Mapbox account
+
+To use Mapbox Studio, you'll need an account. Mapbox provides free access to all of its mapping and development tools with its basic <a href="https://www.mapbox.com/signup/">"Starter" account</a>.
+
+<pre><code>
+#assignments {
+  polygon-fill: #95ffff;
+  polygon-opacity: 0.1;
+  line-color: #00ffff;
+  line-width: 5;
+  line-opacity: 0.3;
+  comp-op: screen;
+  image-filters: agg-stack-blur(4,4);
+  image-filters-inflate: true;
+}
+</code></pre>
