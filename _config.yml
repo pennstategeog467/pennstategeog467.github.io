@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Geography 467 at Penn State
+title: Applied Cartographic Design
 locale: en_US
-description: Introduction to web mapping and applications for campus maps.
+description: Spring 2015: Introduction to web mapping and applications for campus maps.
 logo: site-logo.png
 search: true
 url: http://pennstategeog467.github.io
