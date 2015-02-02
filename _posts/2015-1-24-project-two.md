@@ -130,6 +130,16 @@ Once you have thoroughly and accurately traced all buildings within your assigne
 
 To use Mapbox Studio, you'll need an account. Mapbox provides free access to all of its mapping and development tools with its basic <a href="https://www.mapbox.com/signup/">"Starter" account</a>.
 
+#### 4b. Starting into Mapbox Studio
+
+Mapbox Studio is a software application designed for making tiled web maps. It's the new version of TileMill and there's two really important things that it can do. The first is taking geographic data--like Shapefiles and GeoJSON--and slicing it up into square vector map tiles, which you can upload to Mapbox's online hosting services. The second thing you can do is reference these vector tiles and style their geometries with CartoCSS stylesheets. You can also upload these stylesheets to Mapbox and they'll give you an API that serves up your tiles in a slippy map (like the basemap for the map at the top of this page).
+
+We've installed Mapbox Studio on the computers in 208 Walker, but it's a free software so I would also encourage you to install it on your own computer for this class or in the future. *Like other free and open source software, this is something you'll still be able to use after you graduate*.
+
+Right now, there's an issue with the Windows version of Mapbox Studio that only lets you write to the `C:\` drive. Before we start, we'll make a folder here where we will save our Mapbox Studio projects. Open Windows Explorer and navigate to 
+
+
+
 <pre><code>
 #assignments {
   polygon-fill: #95ffff;
@@ -140,5 +150,13 @@ To use Mapbox Studio, you'll need an account. Mapbox provides free access to all
   comp-op: screen;
   image-filters: agg-stack-blur(4,4);
   image-filters-inflate: true;
+}
+</code></pre>
+
+
+
+<pre><code>
+#assignments [contributor='Your Name'] {
+  ...
 }
 </code></pre>
