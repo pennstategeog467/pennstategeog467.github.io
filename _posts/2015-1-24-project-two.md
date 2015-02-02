@@ -130,7 +130,7 @@ Once you have thoroughly and accurately traced all buildings within your assigne
 
 To use Mapbox Studio, you'll need an account. Mapbox provides free access to all of its mapping and development tools with its basic <a href="https://www.mapbox.com/signup/">"Starter" account</a>.
 
-#### 4b. Starting into Mapbox Studio
+#### 4b. Getting started with Mapbox Studio
 
 Mapbox Studio is a software application designed for making tiled web maps. It's the new version of TileMill and there's two really important things that it can do. The first is taking geographic data--like Shapefiles and GeoJSON--and slicing it up into square vector map tiles, which you can upload to Mapbox's online hosting services. The second thing you can do is reference these vector tiles and style their geometries with CartoCSS stylesheets. You can also upload these stylesheets to Mapbox and they'll give you an API that serves up your tiles in a slippy map (like the basemap for the map at the top of this page).
 
@@ -138,15 +138,25 @@ We've installed Mapbox Studio on the computers in 208 Walker, but it's a free so
 
 Right now, there's <a href="https://github.com/mapbox/mapbox-studio/issues/824">an issue</a> with the Windows version of Mapbox Studio that only lets you write to the `C:\ ` drive. Before we start, we'll make a folder on this drive where we will save our Mapbox Studio projects. Open Windows Explorer and navigate to `C:\Users\your_user_name`. Create a folder here called `mapbox_studio`.
 
-I've set up a Mapbox Studio project for us to start out with. <a href="/geog467-project-2.tm2.zip">Download the ZIP file here.</a> Save this ZIP file into your `mapbox-studio` folder and
+I've set up a Mapbox Studio project for us to start out with. <a href="/geog467-project-2.tm2.zip">Download the ZIP file at this link.</a> Then, extract the `geog467-project-2.tm2` folder and copy it into your `mapbox-studio` folder on the `C:\ ` drive.
+
+Now, open Mapbox Studio on your computer.
+
+You'll be prompted to sign in. This will allow you to upload styles and sources to Mapbox. After signing in, you'll see a variety of styles the cartographers at Mapbox have designed. Pick one that seems interesting and check it out.
+
+Once you've clicked on a style, you'll see stylesheets full of CartoCSS on the right, a map pane in the middle, and a column with buttons that pull out drawers like "settings", "layers", "fonts", "docs", and "projects" on the left. Click on "docs" and then click on the blue "Interface tour" button. Read through this.
+
+We're now going to open the project in the `.tm2` folder that you saved to the `C:\ ` drive. Click on the "Projects" button in the bottom left, then "Browse" to  the `geog467-project-2.tm2` project. Open it, and you'll be looking at State College.
 
 #### 4c. Adding a custom vector source for old buildings data and assignments
 
-Before we started this project, I downloaded the OSM data for State College and then used <a href="http://www.qgis.org/en/site/">QGIS</a> to extract building polygons and create points for house number labels. I then used Mapbox Studio to make this data into a vector tile source and upload it to Mapbox. I've made this source public, so you're now able to reference it and style it in your Mapbox Studio styles.
+Before we started this project, I downloaded the OSM data for State College and then used <a href="http://www.qgis.org/en/site/">QGIS</a> to extract building polygons and create points for house number labels. I then used Mapbox Studio to make this data into a vector tile source and upload it to Mapbox. I've also made this source public, so you're now able to reference it and style it in your Mapbox Studio styles.
 
-In the layers panel, you'll see an option to "Change source". Clicking here brings you to a window with a list of sources you can use. Right now, the project is using `mapbox.mapbox-streets-v5`, but mapbox also provides a terrain source with `#hillshade`, `#contour`, and `#landcover`, and a satellite source to add their imagery basemap.
+In the "layers" drawer on the left, you'll see an option to "Change source". Clicking here brings you to a window with a list of sources you can use. Right now, the project is using `mapbox.mapbox-streets-v5`, but mapbox also provides a terrain source with `#hillshade`, `#contour`, and `#landcover`, and a satellite source to add their imagery basemap.
 
 The source I made has the ID `aarondennis.f7666d1c`. If you put a comma `,` after `mapbox.mapbox-streets-v5`and then paste in `aarondennis.f7666d1c`, you'll add these custom vector tiles to the project. Your source reference should now be `mapbox.mapbox-streets-v5,aarondennis.f7666d1c`. Click apply and then save your project. The layers panel should now show a layer for `#building_old`, `#assignments`, and `#housenum_label_old`.
+
+In the CartoCSS editor on the right, click on the tab labeled "buildings". Copy and paste the code below onto line 17. This will style the `#assignments` layer in the custom source you just added. Save the project and you should see the assignment areas added to the map.
 
 <pre><code>
 #assignments {
@@ -161,10 +171,16 @@ The source I made has the ID `aarondennis.f7666d1c`. If you put a comma `,` afte
 }
 </code></pre>
 
+The text you see on the "style" and "buildings" tabs are style sheets that dictate what you see on the map. writing `#building { polygon-fill: blue; }` would show the `#building` layer on the map as blue shapes. There's a lot of different ways to style points, lines, polygons, raster, and text. The "Docs" drawer gives you a list of all the posibilities.
 
+Those shapes also have fields with values associated to them. In the "Layers" drawer, click on the `#assignments` layer. This layer has a field called `contributor` that has the name of the student assigned to each feature as a value. You can use the syntax `[field='value']` after your `#layer` in CartoCSS to select features and style them a certain way.
+
+Do this for your `#assignments` layer so that the map only shows the area assigned by you. Your CartoCSS should look like the text below, with your name typed exactly as it appears on the GeoJSON map at the beginning of this project.
 
 <pre><code>
 #assignments [contributor='Your Name'] {
   ...
 }
 </code></pre>
+
+Save your project and you should see the map updated to show only your area.
