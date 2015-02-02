@@ -121,7 +121,7 @@ Your job is to trace all visible buildings inside your assigned area and tag the
 
 # 4. Creating before and after maps in Mapbox Studio
 
-Once you have thoroughly and accurately traced all buildings within your assigned area and you've added field-gathered address numbers for at least twenty of thos buildings, you'll be ready to create the following final deliverables for this project:
+Once you have thoroughly and accurately traced all buildings within your assigned area and you've added field-gathered address numbers for at least twenty of those buildings, you'll be ready to create the following final deliverables for this project:
 
 1. A **300ppi PNG image** exported from Mapbox Studio at **zoom level 17** showing buildings and house numbers data from your area **before** tracing.
 2. A **300ppi PNG image** exported from Mapbox Studio at **zoom level 17** showing buildings and house numbers data from your area **after** tracing.
@@ -173,9 +173,11 @@ In the CartoCSS editor on the right, click on the tab labeled "buildings". Copy 
 
 The text you see on the "style" and "buildings" tabs are style sheets that dictate what you see on the map. Writing `#building { polygon-fill: blue; }` would show the `#building` layer on the map as blue shapes. There's a lot of different ways to style points, lines, polygons, raster, and text. The "Docs" drawer gives you a list of all the posibilities.
 
+This is a cartography class and I hope you take the liberty to tweak a few things in this style I've provided. Make it your own, create your own flair, but keep sound cartographic principles and aesthetics in mind.
+
 Those shapes also have fields with values associated to them. In the "Layers" drawer, click on the `#assignments` layer. This layer has a field called `contributor` that has the name of the student assigned to each feature as a value. You can use the syntax `[field='value']` after your `#layer` in CartoCSS to select features and style them a certain way.
 
-Do this for your `#assignments` layer so that the map only shows the area assigned by you. Your CartoCSS should look like the text below, with your name typed exactly as it appears on the GeoJSON map at the beginning of this project.
+Do this for your `#assignments` layer so that the map only shows the area assigned by you. Your CartoCSS should look like the text below, with your name typed exactly as it appears on the GeoJSON map at the beginning of this assignment.
 
 <pre><code>
 #assignments [contributor='Your Name'] {
@@ -187,14 +189,14 @@ Save your project and you should see the assignment areas updated to show only y
 
 #### 4d. Export after-tracing image of your area
 
-The map on your screen is a reflection of the current state of the OSM database. Recall that the `mapbox.mapbox-streets-v5` is built from planet wide OSM data and updated every few minutes. You can probably see buildings on this map that you were tracing in the iD Editor just earlier today. This map shows all the contributions our class has made to OSM buildings in State College. We'll save this map as an image, and then we'll look at what building data existed before we started tracing.
+The map on your screen is a reflection of the current state of the OSM database. Recall that the `mapbox.mapbox-streets-v5` is built from planet wide OSM data and updated every few minutes. You can probably see buildings on this map that you were tracing in the iD Editor just earlier today. This map shows all the contributions our class has made to OSM buildings in State College. In the next steps, we will save this map as an image, and then we'll look at what building data existed before we started tracing.
 
-While Mapbox Studio is best known for bringing maps to the web, but it also has some great print functionality. In the upper right corner, above all the CartoCSS, is a hard to notice button that looks like a picture icon of the sun rising over mountains or something. Clicking here brings us into Mapbox Studio's export image functionality. This is where you make those final deliverables mentioned earlier. Zoom in or out to Zoom Level 17, frame up the box around your assigned area, and then download a 300 pixel-per-inch PNG image file to your `mapbox-studio` folder.
+While Mapbox Studio is best known for designing web map tiles, it also has some great print functionality. In the upper right corner, above all the CartoCSS, is a hard to notice button that looks like some sort of picture icon. Clicking here brings us into Mapbox Studio's export image functionality. This is where you make those final deliverables we mentioned earlier. Zoom in or out to Zoom Level 17, frame the box nicely around your assigned area, and then download a 300 pixel-per-inch PNG image file to your `mapbox-studio` folder.
 
 #### 4e. Adjust style sheet to show old building data
 
-Close out of the image exporter and go back to the building style sheet. Change `#building` and `#housenum_label` to `#building_old` and `#housenum_label_old` so that they reference the before-tracing data I made into the custom style source. Save it and watch all the buildings we've traced disappear, leaving southern State College barren of building data, just like it was before we came along.
+Close out of the image exporter and go back to the building style sheet. Change `#building` and `#housenum_label` to `#building_old` and `#housenum_label_old` so that they reference the layers of before-tracing data in the custom vector tile source. Save it and watch all the buildings we've traced disappear, leaving many neighborhoods in State College barren of building data, just as it was before we started all this.
 
 #### 4f. Export before-tracing image of your area at same dimensions
 
-If you go back to the image export screen, you should be able to download another image at the same dimensions and crop bounds. This will be your before-tracing map. Make sure it shows exactly the same area and is at Zoom Level 17.
+If you go back to the image export screen, you should be able to download another image at the same dimensions and crop bounds. This will be your before-tracing map. Make sure it shows exactly the same area and is also rendered at Zoom Level 17.
