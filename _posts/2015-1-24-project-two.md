@@ -136,9 +136,17 @@ Mapbox Studio is a software application designed for making tiled web maps. It's
 
 We've installed Mapbox Studio on the computers in 208 Walker, but it's a free software so I would also encourage you to install it on your own computer for this class or in the future. *Like other free and open source software, this is something you'll still be able to use after you graduate*.
 
-Right now, there's an issue with the Windows version of Mapbox Studio that only lets you write to the `C:\` drive. Before we start, we'll make a folder here where we will save our Mapbox Studio projects. Open Windows Explorer and navigate to 
+Right now, there's <a href="https://github.com/mapbox/mapbox-studio/issues/824">an issue</a> with the Windows version of Mapbox Studio that only lets you write to the `C:\ ` drive. Before we start, we'll make a folder on this drive where we will save our Mapbox Studio projects. Open Windows Explorer and navigate to ` `. Create a folder here called `mapbox_studio`.
 
 
+
+#### 4c. Adding a custom vector source for old buildings data and assignments
+
+Before we started this project, I downloaded the OSM data for State College and then used <a href="http://www.qgis.org/en/site/">QGIS</a> to extract building polygons and create points for house number labels. I then used Mapbox Studio to make this data into a vector tile source and upload it to Mapbox. I've made this source public, so you're now able to reference it and style it in your Mapbox Studio styles.
+
+In the layers panel, you'll see an option to "Change source". Clicking here brings you to a window with a list of sources you can use. Right now, the project is using `mapbox.mapbox-streets-v5`, but mapbox also provides a terrain source with `#hillshade`, `#contour`, and `#landcover`, and a satellite source to add their imagery basemap.
+
+The source I made has the ID `aarondennis.f7666d1c`. If you put a comma `,` after `mapbox.mapbox-streets-v5`and then paste in `aarondennis.f7666d1c`, you'll add these custom vector tiles to the project. Your source reference should now be `mapbox.mapbox-streets-v5,aarondennis.f7666d1c`. Click apply and then save your project. The layers panel should now show a layer for `#building_old`, `#assignments`, and `#housenum_label_old`.
 
 <pre><code>
 #assignments {
