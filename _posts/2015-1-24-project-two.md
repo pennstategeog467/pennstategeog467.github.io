@@ -136,7 +136,7 @@ Mapbox Studio is a software application designed for making tiled web maps. It's
 
 We've installed Mapbox Studio on the computers in 208 Walker, but it's a free software so I would also encourage you to install it on your own computer for this class or in the future. *Like other free and open source software, this is something you'll still be able to use after you graduate*.
 
-Right now, there's <a href="https://github.com/mapbox/mapbox-studio/issues/824">an issue</a> with the Windows version of Mapbox Studio that only lets you write to the `C:\ ` drive. Before we start, we'll make a folder on this drive where we will save our Mapbox Studio projects. Open Windows Explorer and navigate to `C:\Users\your_user_name`. Create a folder here called `mapbox_studio`.
+Right now, there's <a href="https://github.com/mapbox/mapbox-studio/issues/824">an issue</a> with the Windows version of Mapbox Studio that only lets you write to the `C:\ ` drive. Before we start, we'll make a folder on this drive where we will save our Mapbox Studio projects. Open Windows Explorer and navigate to `C:\Users\your_user_name`. Create a folder here called `mapbox_studio`. Whenever you leave this computer, copy that folder onto a flash drive as a back up. This folder will only be availble on the `C:\ ` drive of this machine.
 
 I've set up a Mapbox Studio project for us to start out with. <a href="/geog467-project-2.tm2.zip">Download the ZIP file at this link.</a> Then, extract the `geog467-project-2.tm2` folder and copy it into your `mapbox-studio` folder on the `C:\ ` drive.
 
@@ -171,7 +171,7 @@ In the CartoCSS editor on the right, click on the tab labeled "buildings". Copy 
 }
 </code></pre>
 
-The text you see on the "style" and "buildings" tabs are style sheets that dictate what you see on the map. writing `#building { polygon-fill: blue; }` would show the `#building` layer on the map as blue shapes. There's a lot of different ways to style points, lines, polygons, raster, and text. The "Docs" drawer gives you a list of all the posibilities.
+The text you see on the "style" and "buildings" tabs are style sheets that dictate what you see on the map. Writing `#building { polygon-fill: blue; }` would show the `#building` layer on the map as blue shapes. There's a lot of different ways to style points, lines, polygons, raster, and text. The "Docs" drawer gives you a list of all the posibilities.
 
 Those shapes also have fields with values associated to them. In the "Layers" drawer, click on the `#assignments` layer. This layer has a field called `contributor` that has the name of the student assigned to each feature as a value. You can use the syntax `[field='value']` after your `#layer` in CartoCSS to select features and style them a certain way.
 
@@ -183,4 +183,18 @@ Do this for your `#assignments` layer so that the map only shows the area assign
 }
 </code></pre>
 
-Save your project and you should see the map updated to show only your area.
+Save your project and you should see the assignment areas updated to show only your area.
+
+#### 4d. Export after-tracing image of your area
+
+The map on your screen is a reflection of the current state of the OSM database. Recall that the `mapbox.mapbox-streets-v5` is built from planet wide OSM data and updated every few minutes. You can probably see buildings on this map that you were tracing in the iD Editor just earlier today. This map shows all the contributions our class has made to OSM buildings in State College. We'll save this map as an image, and then we'll look at what building data existed before we started tracing.
+
+While Mapbox Studio is best known for bringing maps to the web, but it also has some great print functionality. In the upper right corner, above all the CartoCSS, is a hard to notice button that looks like a picture icon of the sun rising over mountains or something. Clicking here brings us into Mapbox Studio's export image functionality. This is where you make those final deliverables mentioned earlier. Zoom in or out to Zoom Level 17, frame up the box around your assigned area, and then download a 300 pixel-per-inch PNG image file to your `mapbox-studio` folder.
+
+#### 4e. Adjust style sheet to show old building data
+
+Close out of the image exporter and go back to the building style sheet. Change `#building` and `#housenum_label` to `#building_old` and `#housenum_label_old` so that they reference the before-tracing data I made into the custom style source. Save it and watch all the buildings we've traced disappear, leaving southern State College barren of building data, just like it was before we came along.
+
+#### 4f. Export before-tracing image of your area at same dimensions
+
+If you go back to the image export screen, you should be able to download another image at the same dimensions and crop bounds. This will be your before-tracing map. Make sure it shows exactly the same area and is at Zoom Level 17.
