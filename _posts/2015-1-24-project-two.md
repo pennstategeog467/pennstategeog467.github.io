@@ -138,7 +138,7 @@ We've installed Mapbox Studio on the computers in 208 Walker, but it's a free so
 
 Right now, there's <a href="https://github.com/mapbox/mapbox-studio/issues/824">an issue</a> with the Windows version of Mapbox Studio that only lets you write to the `C:\ ` drive. Before we start, we'll make a folder on this drive where we will save our Mapbox Studio projects. Open Windows Explorer and navigate to `C:\Users\your_user_name`. Create a folder here called `mapbox_studio`.
 
-I've set up a Mapbox Studio project for us to start out with. <a href="pennstategeog467.github.io/geog467-project-2.tm2.zip">Download the ZIP file here.</a> Save this ZIP file into your `mapbox-studio` folder and
+I've set up a Mapbox Studio project for us to start out with. <a href="/geog467-project-2.tm2.zip">Download the ZIP file here.</a> Save this ZIP file into your `mapbox-studio` folder and
 
 #### 4c. Adding a custom vector source for old buildings data and assignments
 
