@@ -201,6 +201,6 @@ Close out of the image exporter and go back to the building style sheet. Change 
 
 If you go back to the image export screen, you should be able to download another image at the same dimensions and crop bounds. This will be your "before-tracing" map. Make sure it shows exactly the same area and is also rendered at Zoom Level 17.
 
-## Conratulations!
+## Congratulations!
 
 To recap, we've dug into GeoJSON, converted file formats, got familiar with the iD OSM editor, contributed significantly to the OSM data in State College, learned a little bit about Mapbox Studio, and made some maps showing our progress.
