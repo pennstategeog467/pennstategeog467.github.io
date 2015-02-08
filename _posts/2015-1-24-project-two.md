@@ -204,3 +204,31 @@ If you go back to the image export screen, you should be able to download anothe
 ## Congratulations!
 
 To recap, we've dug into GeoJSON, converted file formats, got familiar with the iD OSM editor, contributed significantly to the OSM data in State College, learned a little bit about Mapbox Studio, and made some maps showing our progress.
+
+---
+
+## Results
+
+Since beginning this project, we have contributed significantly to the OSM database in State College. The figure below shows in yellow all new features created during our two week project. Of these features, approximately 25% have full attribution including address numbers.
+
+<figure><img src="/images/project-two/osm-contributions.png"></figure>
+
+Some of the after-tracing maps that we generated in Mapbox Studio are included below.
+
+<figure><img src="/images/project-two/t1.png"></figure>
+<figure><img src="/images/project-two/t2.png"></figure>
+<figure><img src="/images/project-two/t3.png"></figure>
+<figure><img src="/images/project-two/t4.png"></figure>
+<figure><img src="/images/project-two/t5.png"></figure>
+<figure><img src="/images/project-two/t6.png"></figure>
+<figure><img src="/images/project-two/t7.png"></figure>
+<figure><img src="/images/project-two/t8.png"></figure>
+<figure><img src="/images/project-two/t9.png"></figure>
+<figure><img src="/images/project-two/t10.png"></figure>
+<figure><img src="/images/project-two/t11.png"></figure>
+<figure><img src="/images/project-two/t12.png"></figure>
+<figure><img src="/images/project-two/t13.png"></figure>
+<figure><img src="/images/project-two/t14.png"></figure>
+<figure><img src="/images/project-two/t15.png"></figure>
+<figure><img src="/images/project-two/t16.png"></figure>
+<figure><img src="/images/project-two/t17.png"></figure>
