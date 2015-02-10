@@ -14,7 +14,7 @@ image:
 
 For our third project, we will be searching for and critiquing campus maps. As a first step, you will be responsible for researching the campus maps of the universities assigned to you below.
 
-Add the maps you have found <a href="https://docs.google.com/spreadsheets/d/1S0FiaMuzilmW4Gf2MqbDPCRAnZDg7ALkYQoXz5XaWhc/edit">in this spreadsheet.</a>
+Add the maps you have found <a href="https://docs.google.com/spreadsheets/d/1S0FiaMuzilmW4Gf2MqbDPCRAnZDg7ALkYQoXz5XaWhc/edit" target="_blank">in this spreadsheet.</a>
 
 ---
 <h4>AHARONIAN</h4>
