@@ -15,7 +15,7 @@ image:
 For our third project, we will be searching for and critiquing campus maps. As a first step, you will be responsible for researching the campus maps of the universities assigned to you below.
 
 ---
-<h3>AHARONIAN</h3>
+<h4>AHARONIAN</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/Arizona_State_University" title="Arizona State University">Arizona State University</a></td>
@@ -44,7 +44,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>BUJAKOWSKI</h3>
+<h4>BUJAKOWSKI</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/Carnegie_Mellon_University" title="Carnegie Mellon University">Carnegie Mellon University</a></td>
@@ -73,7 +73,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>CHITTESTER</h3>
+<h4>CHITTESTER</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/CUNY_Graduate_Center" title="CUNY Graduate Center" class="mw-redirect">CUNY Graduate Center</a></td>
@@ -102,7 +102,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>COUGHLIN</h3>
+<h4>COUGHLIN</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/George_Washington_University" title="George Washington University">George Washington University</a></td>
@@ -131,7 +131,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>CROWELL</h3>
+<h4>CROWELL</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/Indiana_University_Bloomington" title="Indiana University Bloomington">Indiana University Bloomington</a></td>
@@ -160,7 +160,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>DIFRISCO</h3>
+<h4>DIFRISCO</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/Michigan_State_University" title="Michigan State University">Michigan State University</a></td>
@@ -189,7 +189,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>ECKERSTROM</h3>
+<h4>ECKERSTROM</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/North_Dakota_State_University" title="North Dakota State University">North Dakota State University</a>-Main Campus</td>
@@ -218,7 +218,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>GRAHAM</h3>
+<h4>GRAHAM</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/Princeton_University" title="Princeton University">Princeton University</a></td>
@@ -252,7 +252,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>GUAY</h3>
+<h4>GUAY</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/Stanford_University" title="Stanford University">Stanford University</a></td>
@@ -286,7 +286,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>HASTINGS</h3>
+<h4>HASTINGS</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_at_Buffalo" title="University at Buffalo">University at Buffalo</a></td>
@@ -320,7 +320,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>LENZE</h3>
+<h4>LENZE</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_California,_Davis" title="University of California, Davis">University of California, Davis</a></td>
@@ -355,7 +355,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 
 </table>
 ---
-<h3>NEWHART</h3>
+<h4>NEWHART</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_California,_Santa_Cruz" title="University of California, Santa Cruz">University of California, Santa Cruz</a></td>
@@ -389,7 +389,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>SIMON</h3>
+<h4>SIMON</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_Delaware" title="University of Delaware">University of Delaware</a></td>
@@ -423,7 +423,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>SMITH</h3>
+<h4>SMITH</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_Illinois_at_Urbana%E2%80%93Champaign" title="University of Illinois at Urbana–Champaign">University of Illinois at Urbana–Champaign</a></td>
@@ -457,7 +457,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>STEPHENS</h3>
+<h4>STEPHENS</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_Massachusetts_Amherst" title="University of Massachusetts Amherst">University of Massachusetts Amherst</a></td>
@@ -491,7 +491,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>STERNBERGER</h3>
+<h4>STERNBERGER</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_New_Mexico" title="University of New Mexico">University of New Mexico</a>-Main Campus</td>
@@ -525,7 +525,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>STOKES</h3>
+<h4>STOKES</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_Pittsburgh" title="University of Pittsburgh">University of Pittsburgh</a>-Pittsburgh Campus</td>
@@ -559,7 +559,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>WILLIAMS</h3>
+<h4>WILLIAMS</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/University_of_Texas_at_Austin" title="University of Texas at Austin">University of Texas at Austin</a></td>
@@ -593,7 +593,7 @@ For our third project, we will be searching for and critiquing campus maps. As a
 </tr>
 </table>
 ---
-<h3>ZUBENKO</h3>
+<h4>ZUBENKO</h4>
 <table>
 <tr>
 <td><a target="_blank" href="http://en.wikipedia.org/wiki/Virginia_Commonwealth_University" title="Virginia Commonwealth University">Virginia Commonwealth University</a></td>
