@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Penn State Map</title>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:15%; bottom:0; width:100%; }
+    #search { position:absolute; top:0; bottom:85%; left:50%; right:0; background-color:grey; }
+    
+    .leaflet-control-locate {
+      border:1px solid rgba(0,0,0,0.4);
+    }
+    .leaflet-control-locate a {
+      background-color:#fff;
+      background-position:-3px, -2px;
+    }
+    .leaflet-control-locate.active a {
+      background-position:-33px -2px;
+    }
+    
+  </style>
+</head>
+<body>
+<h1>Penn State</h1>
+<div id='search'>
+</div>
+<div id='map'></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
+<!--[if lt IE 9]>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.ie.css' rel='stylesheet' />
+<![endif]-->
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
+
+<script>
+
+L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';  
+
+var map = L.mapbox.map('map', 'aarondennis.f6516522')
+  .setView([40.7967, -77.8619], 18);
+  L.control.locate().addTo(map);
+
+var hash = L.hash(map);
+
+</script>
+
+</body>
+</html>
