@@ -27,7 +27,8 @@
   
   <style>
     
-    #search { position:absolute; top: 2%; right:5%; left:15%; height:20; box-shadow: 2px 2px 2px #000; }
+    #bar { position:absolute; top:2%; bottom:80%; left:15%; right:5%; }
+    #search { position:absolute; width:200; box-shadow: 2px 2px 2px #000; }
     #map { position:absolute; height: 100%; width:100%; z-index:-1; }
     
     .leaflet-control-locate {
@@ -45,8 +46,8 @@
 </head>
 <body>
 
-<div id='search'>
-    <input class='form-control' placeholder='Search for building...'>
+<div id='bar'>
+  <input id='search' class='form-control' placeholder='Search for building...'>
 </div>
 <div id='map'></div>
 
@@ -59,6 +60,37 @@ var map = L.mapbox.map('map', 'aarondennis.f6516522')
   L.control.locate().addTo(map);
 
 var hash = L.hash(map);
+
+$(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+  
+  $( "#search" ).autocomplete({
+      source: availableTags
+    });
+  });
 
 </script>
 
