@@ -31,6 +31,19 @@
     #search { position:absolute; width:200; box-shadow: 2px 2px 2px #000; }
     #map { position:absolute; height: 100%; width:100%; z-index:-1; }
     
+    .ui-autocomplete {
+      max-height: 100px;
+      overflow-y: auto;
+      /* prevent horizontal scrollbar */
+      overflow-x: hidden;
+    }
+    /* IE 6 doesn't support max-height
+    * we use height instead, but this forces the menu to always be this tall
+    */
+    * html .ui-autocomplete {
+      height: 25%;
+    }
+    
     .leaflet-control-locate {
       border:1px solid rgba(0,0,0,0.4);
     }
@@ -57,36 +70,54 @@ var map = L.mapbox.map('map', 'aarondennis.f6516522')
   .setView([40.7967, -77.8619], 18);
   L.control.locate().addTo(map);
 var hash = L.hash(map);
+
+</script>
+
+<script src='centroids.js'></script>
+
+<script>
+console.log("here");
+
+function getTags(data) {
+  var tagNames = [];
+  for (var i = 0; i < data.features.length; i++) {
+    if (data.features[i].properties.title !== null && centroids.features[i].properties.title !== undefined) {
+      tagNames.push(data.features[i].properties.title);
+    }
+  }
+  return tagNames;
+}
+
 $(function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
+  var availableTags = getTags(centroids);
   
   $( "#search" ).autocomplete({
-      source: availableTags
-    });
+    source: availableTags,
+    minLength: 3,
+    autoFocus: true,
+    select: function( event, ui ) { 
+      console.log('selected!');
+      setTimeout( zoomToPoint, 50 );
+    }
   });
+});
+
+function zoomToPoint() {
+  var targetName = document.getElementById('search').value;
+  console.log(targetName);
+  for (var i = 0; i < centroids.features.length; i++) {
+    if (centroids.features[i].properties.title === targetName) {
+      console.log('found it');
+      var targetLocation = centroids.features[i].geometry.coordinates;
+      break;
+    } else {
+      console.log('not found');
+    }
+  }
+  console.log('it is at ' + targetLocation[1], + " " + targetLocation[0]);
+  map.setView([targetLocation[1], targetLocation[0]], 18);
+}
+
 </script>
 
 </body>
