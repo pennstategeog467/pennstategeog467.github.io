@@ -95,14 +95,11 @@ var markers = L.mapbox.featureLayer(centroids)
     '<li>Department of This</li>' +
     '<li>Department of That</li>' +
     '</ul>' +
+    '<div><img style="margin:2px;width:100%;" src="images/old_main.jpg" /></div>' +
     '<button class="btn btn-info trigger">Directions to here</button>'
   )
   .addTo(map);
   
-$('#map').on('click', function() {
-    markers.setFilter(function() { return false; });
-});
-
 // get titles of points and add to autocomplete tags
 function getTags(data) {
   var tagNames = [];
