@@ -7,7 +7,7 @@
         "marker-color": "#ff2600",
         "marker-size": "medium",
         "marker-symbol": "triangle",
-        "title": "alert"
+        "title": "This is a warning!"
       },
       "geometry": {
         "type": "Point",
