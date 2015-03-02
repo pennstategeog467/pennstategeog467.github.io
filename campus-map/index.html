@@ -27,7 +27,7 @@
   
   <style>
     
-    #bar { position:absolute; top:2%; bottom:80%; left:15%; right:5%; }
+    #bar { position:absolute; top:2%; bottom:80%; left:4em; right:5%; max-width:600px; }
     #search { position:absolute; width:200; box-shadow: 2px 2px 2px #000; }
     #map { position:absolute; height: 100%; width:100%; z-index:-1; }
     
@@ -37,11 +37,8 @@
       /* prevent horizontal scrollbar */
       overflow-x: hidden;
     }
-    /* IE 6 doesn't support max-height
-    * we use height instead, but this forces the menu to always be this tall
-    */
     * html .ui-autocomplete {
-      height: 25%;
+      max-height: 25%;
     }
     
     .leaflet-control-locate {
@@ -62,7 +59,7 @@
 <div id='bar'>
   <input id='search' class='form-control' placeholder='Search for building...'>
 </div>
-<div id='map'></div>
+<div id='map' class='map'></div>
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';  
@@ -73,11 +70,18 @@ var hash = L.hash(map);
 
 </script>
 
+<!--load in GeoJSON data-->
 <script src='centroids.js'></script>
 
 <script>
-console.log("here");
 
+// add points layer to map
+var markers = L.mapbox.featureLayer(centroids)
+  .setFilter(function() { return false; })
+  .bindPopup('<button class="btn btn-info trigger">Directions to here</button>')
+  .addTo(map);
+
+// get titles of points and add to autocomplete tags
 function getTags(data) {
   var tagNames = [];
   for (var i = 0; i < data.features.length; i++) {
@@ -88,35 +92,50 @@ function getTags(data) {
   return tagNames;
 }
 
+// set search bar behavior
 $(function() {
   var availableTags = getTags(centroids);
   
   $( "#search" ).autocomplete({
     source: availableTags,
-    minLength: 3,
+    minLength: 2,
     autoFocus: true,
     select: function( event, ui ) { 
       console.log('selected!');
-      setTimeout( zoomToPoint, 50 );
+      setTimeout( zoomToSearchPoint, 50 );
     }
   });
 });
 
-function zoomToPoint() {
+// zoom to search point
+function zoomToSearchPoint() {
   var targetName = document.getElementById('search').value;
   console.log(targetName);
   for (var i = 0; i < centroids.features.length; i++) {
     if (centroids.features[i].properties.title === targetName) {
-      console.log('found it');
-      var targetLocation = centroids.features[i].geometry.coordinates;
+      var targetPointIndex = i;
       break;
     } else {
       console.log('not found');
     }
   }
-  console.log('it is at ' + targetLocation[1], + " " + targetLocation[0]);
-  map.setView([targetLocation[1], targetLocation[0]], 18);
+  console.log(centroids.features[targetPointIndex].geometry.coordinates);
+  map.setView([centroids.features[targetPointIndex].geometry.coordinates[1], centroids.features[targetPointIndex].geometry.coordinates[0]], 18);
+  markers.setFilter(function(feature) { return feature.properties.title === targetName });
 }
+
+</script>
+
+<!---DIRECTION-->
+<script>
+
+function getDirections(position, destination) {
+  console.log('getting directions');
+}
+
+$('#map').on('click', '.trigger', function() {
+    navigator.geolocation.getCurrentPosition(getDirections);
+});
 
 </script>
 
