@@ -41,6 +41,8 @@
       max-height: 25%;
     }
     
+    /* geolocate */
+    
     .leaflet-control-locate {
       border:1px solid rgba(0,0,0,0.4);
     }
@@ -78,7 +80,14 @@ var hash = L.hash(map);
 // add points layer to map
 var markers = L.mapbox.featureLayer(centroids)
   .setFilter(function() { return false; })
-  .bindPopup('<button class="btn btn-info trigger">Directions to here</button>')
+  .bindPopup(
+    '<h1>Penn State Building</h1>' +
+    '<ul>' +
+    '<li>Department of This</li>' +
+    '<li>Department of That</li>' +
+    '</ul>' +
+    '<button class="btn btn-info trigger">Directions to here</button>'
+  )
   .addTo(map);
 
 // get titles of points and add to autocomplete tags
@@ -126,15 +135,10 @@ function zoomToSearchPoint() {
 
 </script>
 
-<!---DIRECTION-->
 <script>
 
-function getDirections(position, destination) {
-  console.log('getting directions');
-}
-
 $('#map').on('click', '.trigger', function() {
-    navigator.geolocation.getCurrentPosition(getDirections);
+    console.log('give directions');
 });
 
 </script>
