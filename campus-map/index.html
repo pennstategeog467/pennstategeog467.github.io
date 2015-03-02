@@ -27,7 +27,7 @@
   
   <style>
     
-    #bar { position:absolute; top:2%; bottom:80%; left:4em; right:5%; max-width:600px; }
+    #bar { position:absolute; top:1em; bottom:80%; left:4em; right:5%; max-width:600px; }
     #search { position:absolute; width:200; box-shadow: 2px 2px 2px #000; }
     #map { position:absolute; height: 100%; width:100%; z-index:-1; }
     
@@ -64,8 +64,17 @@
 <div id='map' class='map'></div>
 
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';  
-var map = L.mapbox.map('map', 'aarondennis.f6516522')
+L.mapbox.accessToken = 'pk.eyJ1IjoiYWFyb25kZW5uaXMiLCJhIjoiem5LLURoYyJ9.T3tswGTI5ve8_wE-a02cMw';
+
+var southWest = L.latLng(40.7643, -77.9043),
+    northEast = L.latLng(40.8844, -77.8064),
+    bounds = L.latLngBounds(southWest, northEast);
+
+var map = L.mapbox.map('map', 'aarondennis.f6516522', {
+    maxBounds: bounds,
+    maxZoom: 19,
+    minZoom: 15
+  })
   .setView([40.7967, -77.8619], 18);
   L.control.locate().addTo(map);
 var hash = L.hash(map);
@@ -89,6 +98,10 @@ var markers = L.mapbox.featureLayer(centroids)
     '<button class="btn btn-info trigger">Directions to here</button>'
   )
   .addTo(map);
+  
+$('#map').on('click', function() {
+    markers.setFilter(function() { return false; });
+});
 
 // get titles of points and add to autocomplete tags
 function getTags(data) {
