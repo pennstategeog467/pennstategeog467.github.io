@@ -26,7 +26,7 @@ The code below is a basic template for an html document and includes a box on th
 
 <!DOCTYPE html>
 
-<!-- Stuff inside these  < !-- -- >  are comments -->
+<!-- Words inside these  < !-- -- >  are comments -->
 
 <!-- In programming languages, comments aren't read by the computer, they're just there to make things more understandable by humans. -->
 
@@ -63,7 +63,7 @@ The code below is a basic template for an html document and includes a box on th
 
 Save your `.html` file and then open it with a web browser like Chrome. Web browsers are the applications that read and interpret `.html` files. As you make changes to the code in your file, save and then 
 
-Copy and paste this block of code into the space between the `<head></head>` tags.
+Copy and paste this next block of code into the space between the `<head></head>` tags.
 
 <textarea style="height:400px;font-family:monospace;">
 
@@ -85,39 +85,11 @@ Copy and paste this block of code into the space between the `<head></head>` tag
 
 </textarea>
 
+Add this next block of code after the stuff you just added, but keep it between the `<head></head>` tags. This is some CSS for the page.
+
+
 <textarea style="height:400px;font-family:monospace;">
-
-<!--This is an HTML document-->
-
-<!DOCTYPE html>
-
-<!-- Stuff inside these  < !-- -- >  are comments -->
-
-<!-- In programming languages, comments aren't read by the computer, they're just there to make things more understandable by humans. -->
-
-<!-- HTML is written in opening and closing tags. Here is an opening tag <html> for HTML content. The closing tag </html> is at the bottom -->
-<html>
-
-  <!-- This next section is the "head" of document. It doesn't show up on the page but it contains some very important stuff. Notice the opening tag <head> and the closing tag </head> later on. -->
-  <head>
-
-    <!-- This just says we're using standard characters when we type. Don't worry too much about it -->
-    <meta charset=utf-8 />
-
-    <!-- The title of a website shows up on the page tab in your web browser. -->
-    <title>I WANT A MAP!</title>
-    
-    <!-- The meta tag tells the browser some stuff about what the webpage should or should not do. -->
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-
-    <!-- This is where the API comes in. Here, we're referencing the Mapbox.js API, which is a plugin/add-on for Leaflet. The script tag references prewritten javascript code (the API) and defines functions and methods for us to use which helps us do things that would otherwise be thousands of times more complicated like make a tiled map.  -->
-    <!-- script tags always mean there's javascript between them or in a source (src) file -->
-    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-
-    <!-- the Mapbox.js API also comes with a CSS stylesheet to format things like zoom controls -->
-    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-
-    
+   
     <!-- Stuff between <style> tags is CSS. It adds formatting to document elements, like dividers and text, sometimes based on element IDs. -->
     <style>
   
@@ -131,15 +103,11 @@ Copy and paste this block of code into the space between the `<head></head>` tag
 
     </style>
 
-  <!-- Here we close out the <head> tag from further up in the HTML document -->
-  </head>
+</textarea>
 
-  <!-- Stuff inside the <body> tags is content you're going to see visually on the webpage -->
-  <body>
+Add this next block of code in between the `<body></body>` tags and after closing `</div>` tag.
 
-    <!-- A <div> tag is like a box on the page. It divides the page into sections. This div has is given the ID of "map" and, you guessed it, it's where we're going to put the map.  -->
-    <div id='map'></div>
-
+<textarea style="height:400px;font-family:monospace;">
 
     <!-- Remember when we referenced that API earlier? Now we'll use it. The code between <script> tags is javascript -->
     <script>
@@ -156,9 +124,5 @@ Copy and paste this block of code into the space between the `<head></head>` tag
       ourMap.setView([40, -74.50], 9);
 
     </script>
-
-  </body>
-
-</html>
 
 </textarea>
