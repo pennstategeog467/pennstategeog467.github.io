@@ -20,7 +20,9 @@ Before you start, it's important to know that HTML is written in pairs of openin
 
 The code below is a basic template for an html document and includes a box on the webpage--known as a div--where we'll put our map. Copy and paste this into your `.html` file.
 
-<textarea style="height:400px;font:monospace;">
+As you work through these code blocks, take the time to read them and the comments I've added.
+
+<pre><code>
 
 <!--This is an HTML document-->
 
@@ -59,10 +61,33 @@ The code below is a basic template for an html document and includes a box on th
 
 </html>
 
-</textarea>
+<pre><code>
 
+Save your `.html` file and then open it with a web browser like Chrome. Web browsers are the applications that read and interpret `.html` files. As you make changes to the code in your file, save and then refresh the browser page to see those changes.
 
-<textarea style="height:400px;font:monospace;">
+Copy and paste this block of code into the space between the `<head></head>` tags.
+
+<pre><code>
+
+    <!-- This just says we're using standard characters when we type. Don't worry too much about it -->
+    <meta charset=utf-8 />
+
+    <!-- The title of a website shows up on the page tab in your web browser. -->
+    <title>I WANT A MAP!</title>
+    
+    <!-- The meta tag tells the browser some stuff about what the webpage should or should not do. -->
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!-- This is where the API comes in. Here, we're referencing the Mapbox.js API, which is a plugin/add-on for Leaflet. The script tag references prewritten javascript code (the API) and defines functions and methods for us to use which helps us do things that would otherwise be thousands of times more complicated like make a tiled map.  -->
+    <!-- script tags always mean there's javascript between them or in a source (src) file -->
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+
+    <!-- the Mapbox.js API also comes with a CSS stylesheet to format things like zoom controls -->
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+
+<pre><code>
+
+<pre><code>
 
 <!--This is an HTML document-->
 
@@ -138,4 +163,4 @@ The code below is a basic template for an html document and includes a box on th
 
 </html>
 
-</textarea>
+<pre><code>
