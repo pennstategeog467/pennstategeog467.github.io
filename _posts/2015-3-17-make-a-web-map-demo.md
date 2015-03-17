@@ -20,7 +20,7 @@ Before you start, it's important to know that HTML is written in pairs of openin
 
 The code below is a basic template for an html document and includes a box on the webpage--known as a div--where we'll put our map. Copy and paste this into your `.html` file.
 
-<textarea style="height:400px;font-family:monospace;">
+<textarea style="height:400px;font-family:monospace;background-color:lightyellow;">
 
 <!--This is an HTML document-->
 
@@ -59,7 +59,7 @@ Save your `.html` file and then open it with a web browser like Chrome. Web brow
 
 Copy and paste this next block of code into the space between the `<head></head>` tags.
 
-<textarea style="height:400px;font-family:monospace;">
+<textarea style="height:400px;font-family:monospace;background-color:lightyellow;">
 
     <!-- This just says we're using standard characters when we type. Don't worry too much about it -->
     <meta charset=utf-8 />
@@ -82,7 +82,7 @@ Copy and paste this next block of code into the space between the `<head></head>
 Add this next block of code after the stuff you just added, but keep it between the `<head></head>` tags. This is some CSS for the page.
 
 
-<textarea style="height:400px;font-family:monospace;">
+<textarea style="height:400px;font-family:monospace;background-color:lightyellow;">
    
     <!-- Stuff between <style> tags is CSS. It adds formatting to document elements, like dividers and text, sometimes based on element IDs. -->
     <style>
@@ -101,7 +101,7 @@ Add this next block of code after the stuff you just added, but keep it between 
 
 Add this next block of code in between the `<body></body>` tags and after closing `</div>` tag.
 
-<textarea style="height:400px;font-family:monospace;">
+<textarea style="height:400px;font-family:monospace;background-color:lightyellow;">
 
     <!-- Remember when we referenced that API earlier? Now we'll use it. The code between <script> tags is javascript -->
     <script>
@@ -125,7 +125,7 @@ Now, when you open the HTML file in a web browser, you should see a map. Great j
 
 For a little added fun, we can use javascript to provide further functionality. Add the next code block after the `ourMap.setView([40, -74.50], 9);` line and before the closing `</script>` tag.
 
-<textarea style="height:400px;font-family:monospace;">
+<textarea style="height:400px;font-family:monospace;background-color:lightyellow;">
 
 // Here's a list, or array, of other map IDs we could have used when we made our map. We're saving it as the variable otherMaps
       var otherMaps = [ 'mapbox.streets',
