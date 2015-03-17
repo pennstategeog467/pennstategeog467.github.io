@@ -20,7 +20,7 @@ Before you start, it's important to know that HTML is written in pairs of openin
 
 The code below is a basic template for an html document and includes a box on the webpage--known as a div--where we'll put our map. Copy and paste this into your `.html` file.
 
-<textarea>
+<textarea style="height:400px;">
 
 <!--This is an HTML document-->
 
@@ -62,7 +62,7 @@ The code below is a basic template for an html document and includes a box on th
 </textarea>
 
 
-<textarea>
+<textarea style="height:400px;">
 
 <!--This is an HTML document-->
 
