@@ -44,14 +44,8 @@ The code below is a basic template for an html document and includes a box on th
   <!-- Stuff inside the <body> tags is content you're going to see visually on the webpage -->
   <body>
 
-    <!-- A <div> tag is like a box on the page. It divides the page into sections. This div has is given the ID of "map" and, you guessed it, it's where we're going to put the map.  -->
-    <div id='map'>
-    
-      <!-- A <p> tag is paragraph text. Feel free to change the words between the tags, save the file, refresh your the web page, and see them change in the browser. Then delete this comment and the <p> tags and the text between them. -->
-      <p>Let's put a map in here.</p>
-    
-    </div>
-
+    <!-- A <div> tag is like a box on the page. It divides the page into sections. This div is given the ID of "map" and it's where we're going to put the map.  -->
+    <div id='map'></div>
 
 
 
@@ -126,3 +120,51 @@ Add this next block of code in between the `<body></body>` tags and after closin
     </script>
 
 </textarea>
+
+Now, when you open the HTML file in a web browser, you should see a map. If you do, awesome!
+
+For a little added fun, we can add  the javascript in the next code block after the `ourMap.setView([40, -74.50], 9);` line and before the closing `</script>` tag. And then add the HTML button element in the next code block.
+
+<textarea style="height:400px;font-family:monospace;">
+
+// Here's a list, or array, of other map IDs we could have used when we made our map. We're saving it as the variable otherMaps
+      var otherMaps = [ 'mapbox.streets',
+                        'mapbox.light',
+                        'mapbox.dark',
+                        'mapbox.satellite',
+                        'mapbox.streets-satellite',
+                        'mapbox.wheatpaste',
+                        'mapbox.streets-basic',
+                        'mapbox.comic',
+                        'mapbox.outdoors',
+                        'mapbox.run-bike-hike',
+                        'mapbox.pencil',
+                        'mapbox.pirates',
+                        'mapbox.emerald',
+                        'mapbox.high-contrast',
+                        'examples.map-i86nkdio' ];
+      
+      // Each of the items in the otherMaps list has an index. For example, otherMaps[0] is equal to 'mapbox.streets' because it is in the first, or 0, position in the array.
+      
+      // Let's make an "event listener" with javascript so that each time someone clicks on the element 'nextMap', we load in a random new map.
+      document.getElementById('nextMap').onclick = newMap;
+            
+      //The even listener above says "on the click of the window, call the function loadNewMap. We can define that function below
+      function newMap(){ // Defining a new function that will run a block of code
+        ourMap.eachLayer(function(layer) { ourMap.removeLayer(layer); }); // Remove any existing tile layers
+        var mapIndex = Math.floor(Math.random() * 15); // This gives a random number between 0 and 14
+        var layer = L.mapbox.tileLayer(otherMaps[mapIndex]); // Pick out our new tile map layer from the otherMaps options
+        layer.addTo(ourMap); // Add the new map layer
+      };
+</textarea>
+
+Add this HTML button element after the 'map' `</div>` and before the `<script>` tag.
+
+<textarea style="height:400px;font-family:monospace;">
+
+<!-- This button element is has an associated javascript event handler that makes a new map layer -->
+<button id="nextMap" type="button" style="position:absolute;z-index=2;top:10px;left:60px;">Click for a random map.</button>
+
+</textarea>
+
+Save your file and refresh the page.
