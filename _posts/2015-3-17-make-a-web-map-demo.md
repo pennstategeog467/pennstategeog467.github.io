@@ -123,7 +123,7 @@ Add this next block of code in between the `<body></body>` tags and after closin
 
 Now, when you open the HTML file in a web browser, you should see a map. If you do, awesome!
 
-For a little added fun, we can add  the javascript in the next code block after the `ourMap.setView([40, -74.50], 9);` line and before the closing `</script>` tag. And then add the HTML button element in the next code block.
+For a little added fun, we can add  the javascript in the next code block after the `ourMap.setView([40, -74.50], 9);` line and before the closing `</script>` tag.
 
 <textarea style="height:400px;font-family:monospace;">
 
@@ -158,7 +158,7 @@ For a little added fun, we can add  the javascript in the next code block after 
       };
 </textarea>
 
-Add this HTML button element after the 'map' `</div>` and before the `<script>` tag.
+Finally, add this HTML button element after the 'map' `</div>` and before the `<script>` tag.
 
 <textarea style="height:400px;font-family:monospace;">
 
