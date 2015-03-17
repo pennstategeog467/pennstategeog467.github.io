@@ -12,7 +12,7 @@ image:
   creditlink: 
 ---
 
-This is all about getting our hands dirty with HTML, CSS, Javascript, and a mapping library API. It's a quick intro, just to give you a sense of how we can integrate tiled maps in web pages.
+This is all about getting our hands dirty with HTML, CSS, Javascript, and a mapping library API. It's a quick intro, just to give you a sense of how we can integrate tiled maps in web pages. Copy and paste the entirety of the code blocks below into your HTML file as instructed.
 
 First, create a new `.html` document by opening a text editor like Notepad or TextEdit and saving a blank file called `web-map.html`. Make sure the file extension is `.html` and not `.txt`. You may have to 'save as all file types'.
 
@@ -121,9 +121,9 @@ Add this next block of code in between the `<body></body>` tags and after closin
 
 </textarea>
 
-Now, when you open the HTML file in a web browser, you should see a map. If you do, awesome!
+Now, when you open the HTML file in a web browser, you should see a map. Great job!
 
-For a little added fun, we can add  the javascript in the next code block after the `ourMap.setView([40, -74.50], 9);` line and before the closing `</script>` tag.
+For a little added fun, we can use javascript to provide further functionality. Add the next code block after the `ourMap.setView([40, -74.50], 9);` line and before the closing `</script>` tag.
 
 <textarea style="height:400px;font-family:monospace;">
 
@@ -144,12 +144,12 @@ For a little added fun, we can add  the javascript in the next code block after 
                         'mapbox.high-contrast',
                         'examples.map-i86nkdio' ];
       
-      // Each of the items in the otherMaps list has an index. For example, otherMaps[0] is equal to 'mapbox.streets' because it is in the first, or 0, position in the array.
+      // Each of the items in the otherMaps list has an index. For example, otherMaps[0] is equal to 'mapbox.streets' because it is in the first, or 0 position, in the array.
       
-      // Let's make an "event listener" with javascript so that each time someone clicks on the element 'nextMap', we load in a random new map.
+      // Let's make an "event listener" with javascript so that each time someone clicks on the button with the ID 'nextMap', we load in random set of map tiles.
       document.getElementById('nextMap').onclick = newMap;
-            
-      //The even listener above says "on the click of the window, call the function loadNewMap. We can define that function below
+      
+      //The even listener above says "on the click of the 'newMap' button, call the function loadNewMap. We have defined that function below
       function newMap(){ // Defining a new function that will run a block of code
         ourMap.eachLayer(function(layer) { ourMap.removeLayer(layer); }); // Remove any existing tile layers
         var mapIndex = Math.floor(Math.random() * 15); // This gives a random number between 0 and 14
@@ -158,13 +158,13 @@ For a little added fun, we can add  the javascript in the next code block after 
       };
 </textarea>
 
-Finally, add this HTML button element after the 'map' `</div>` and before the `<script>` tag.
+Finally, add this HTML button element after the `ourMap.setView([40, -74.50], 9);` line and before the opening `<script>` tag.
 
 <textarea style="height:400px;font-family:monospace;">
 
-<!-- This button element is has an associated javascript event handler that makes a new map layer -->
+<!-- This button element has an associated javascript event handler that makes a new map layer -->
 <button id="nextMap" type="button" style="position:absolute;z-index=2;top:10px;left:60px;">Click for a random map.</button>
 
 </textarea>
 
-Save your file and refresh the page.
+Save your file and refresh the page. Now, the webpage should be listening for you to click on the button in the top left. When you do, javascript will load a random new tiled map.
