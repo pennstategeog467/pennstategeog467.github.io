@@ -160,7 +160,7 @@ For a little added fun, we can use javascript to provide further functionality. 
 
 Finally, add this HTML button element after the closing `</div>` tag and before the opening `<script>` tag.
 
-<textarea style="height:400px;font-family:monospace;">
+<textarea style="height:400px;font-family:monospace;background-color:lightyellow;">
 
 <!-- This button element has an associated javascript event handler that makes a new map layer when the button is clicked. -->
 <button id="nextMap" type="button" style="position:absolute;z-index=2;top:10px;left:60px;">Click for a random map.</button>
