@@ -158,7 +158,7 @@ For a little added fun, we can use javascript to provide further functionality. 
       };
 </textarea>
 
-Finally, add this HTML button element after the `ourMap.setView([40, -74.50], 9);` line and before the opening `<script>` tag.
+Finally, add this HTML button element after the closing `</div>` tag and before the opening `<script>` tag.
 
 <textarea style="height:400px;font-family:monospace;">
 
