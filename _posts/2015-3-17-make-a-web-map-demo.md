@@ -20,9 +20,7 @@ Before you start, it's important to know that HTML is written in pairs of openin
 
 The code below is a basic template for an html document and includes a box on the webpage--known as a div--where we'll put our map. Copy and paste this into your `.html` file.
 
-As you work through these code blocks, take the time to read them and the comments I've added.
-
-<pre><code>
+<textarea style="height:400px;font-family:monospace;">
 
 <!--This is an HTML document-->
 
@@ -61,13 +59,13 @@ As you work through these code blocks, take the time to read them and the commen
 
 </html>
 
-</pre></code>
+</textarea>
 
-Save your `.html` file and then open it with a web browser like Chrome. Web browsers are the applications that read and interpret `.html` files. As you make changes to the code in your file, save and then refresh the browser page to see those changes.
+Save your `.html` file and then open it with a web browser like Chrome. Web browsers are the applications that read and interpret `.html` files. As you make changes to the code in your file, save and then 
 
-Copy and paste this next block of code into the space between the `<head></head>` tags.
+Copy and paste this block of code into the space between the `<head></head>` tags.
 
-<pre><code>
+<textarea style="height:400px;font-family:monospace;">
 
     <!-- This just says we're using standard characters when we type. Don't worry too much about it -->
     <meta charset=utf-8 />
@@ -85,31 +83,9 @@ Copy and paste this next block of code into the space between the `<head></head>
     <!-- the Mapbox.js API also comes with a CSS stylesheet to format things like zoom controls -->
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 
-</pre></code>
+</textarea>
 
-Copy and paste this next after the stuff you just added and make sure it stays between the `<head></head>` tags.
-
-<pre><code>
-
-    
-    <!-- Stuff between <style> tags is CSS. It adds formatting to document elements, like dividers and text, sometimes based on element IDs. -->
-    <style>
-  
-      /* this is what a comment looks like in CSS */
-      
-      /* This makes the <body> element fill up the whole page. Everything other element will go inside the <body> element. */
-      body { margin:0; padding:0; } 
-  
-      /* This tells the <div> we ID'd as #map to be in a positon that's not relative to anything else, 0 pixels from the top of its container, 0 pixels from the bottom, and 100% of the containers width. Basically, it's always going to be as large as your browser window */
-      #map { position:absolute; top:0; bottom:0; width:100%; }
-
-    </style>
-
-</pre></code>
-
-
-
-<pre><code>
+<textarea style="height:400px;font-family:monospace;">
 
 <!--This is an HTML document-->
 
@@ -185,4 +161,4 @@ Copy and paste this next after the stuff you just added and make sure it stays b
 
 </html>
 
-</pre></code>
+</textarea>
