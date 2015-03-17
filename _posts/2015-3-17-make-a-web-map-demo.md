@@ -61,11 +61,11 @@ As you work through these code blocks, take the time to read them and the commen
 
 </html>
 
-<pre><code>
+</pre></code>
 
 Save your `.html` file and then open it with a web browser like Chrome. Web browsers are the applications that read and interpret `.html` files. As you make changes to the code in your file, save and then refresh the browser page to see those changes.
 
-Copy and paste this block of code into the space between the `<head></head>` tags.
+Copy and paste this next block of code into the space between the `<head></head>` tags.
 
 <pre><code>
 
@@ -85,7 +85,29 @@ Copy and paste this block of code into the space between the `<head></head>` tag
     <!-- the Mapbox.js API also comes with a CSS stylesheet to format things like zoom controls -->
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 
+</pre></code>
+
+Copy and paste this next after the stuff you just added and make sure it stays between the `<head></head>` tags.
+
 <pre><code>
+
+    
+    <!-- Stuff between <style> tags is CSS. It adds formatting to document elements, like dividers and text, sometimes based on element IDs. -->
+    <style>
+  
+      /* this is what a comment looks like in CSS */
+      
+      /* This makes the <body> element fill up the whole page. Everything other element will go inside the <body> element. */
+      body { margin:0; padding:0; } 
+  
+      /* This tells the <div> we ID'd as #map to be in a positon that's not relative to anything else, 0 pixels from the top of its container, 0 pixels from the bottom, and 100% of the containers width. Basically, it's always going to be as large as your browser window */
+      #map { position:absolute; top:0; bottom:0; width:100%; }
+
+    </style>
+
+</pre></code>
+
+
 
 <pre><code>
 
@@ -163,4 +185,4 @@ Copy and paste this block of code into the space between the `<head></head>` tag
 
 </html>
 
-<pre><code>
+</pre></code>
