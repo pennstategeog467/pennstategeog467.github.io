@@ -31,7 +31,7 @@ Don't worry too much about these now, but if you ever have a question you can fi
 
 Today, we're mostly concerned with "Issues".
 
-Code on GitHub lives in repositories, and these repositories can have list of issue that the project collaborators identify. These issues might be about bugs, enhancements, goals, or general questions. Issues are basically discussion threads with original posters, comments, and the ability to paste in images, links, and example code.
+Code on GitHub lives in repositories, and these repositories can have list of issue that the project collaborators identify. These issues might be about bugs, enhancements, goals, or general questions. Issues are basically discussion threads with original posters, comments, and the ability to paste in images, links, and example code. Here's an [example](https://github.com/pennstategeog467/campus-map/issues/9).
 
 Today, you'll be creating and "issue" that's all about your final project proposal.
 
@@ -40,5 +40,4 @@ This is the GitHub repository for the campus map website: [https://github.com/pe
 This is a list of all the open issues for this repository: [https://github.com/pennstategeog467/campus-map/issues](https://github.com/pennstategeog467/campus-map/issues)
 
 You can open a new issue to write about your topic by logging into GitHub and then going to this URL: [https://github.com/pennstategeog467/campus-map/issues/new](https://github.com/pennstategeog467/campus-map/issues/new)
-
 
