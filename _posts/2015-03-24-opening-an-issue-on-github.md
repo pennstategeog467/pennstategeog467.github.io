@@ -38,6 +38,6 @@ Today, you'll be creating and "issue" that's all about your final project propos
 This is the GitHub repository for the campus map website: [https://github.com/pennstategeog467/campus-map](https://github.com/pennstategeog467/campus-map)
 This is a list of all the open issues for this repository: [https://github.com/pennstategeog467/campus-map/issues](https://github.com/pennstategeog467/campus-map/issues)
 
-You can open a new issue to write about your topic logging into GitHub and then going to this URL: [https://github.com/pennstategeog467/campus-map/issues/new](https://github.com/pennstategeog467/campus-map/issues/new)
+You can open a new issue to write about your topic by logging into GitHub and then going to this URL: [https://github.com/pennstategeog467/campus-map/issues/new](https://github.com/pennstategeog467/campus-map/issues/new)
 
 
