@@ -31,7 +31,7 @@ Don't worry too much about these now, but if you ever have a question you can fi
 
 Today, we're mostly concerned with "Issues".
 
-Code on GitHub lives in repositories, and these repositories can have list of issue that the project collaborators identify. These issues might be about bugs, enhancements, goals, or general questions. Issues are basically discussion threads with original posters, comments, and the ability to paste in images, links, and example code. Here's an [example](https://github.com/pennstategeog467/campus-map/issues/9).
+Code on GitHub lives in repositories, and these repositories can have list of issue that the project collaborators identify. These issues might be about bugs, enhancements, goals, or general questions. Issues are basically discussion threads with original posters, comments, and the ability to paste in images, links, and code. Here's an [example](https://github.com/pennstategeog467/campus-map/issues/9).
 
 Today, you'll be creating and "issue" that's all about your final project proposal.
 
