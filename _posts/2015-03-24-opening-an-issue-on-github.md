@@ -27,10 +27,17 @@ GitHub has a set of jargon associated with it that we'll pick up as we move alon
 - issue
 - collaborator
 
-Don't worry too much about this now, but if you ever have a question you can find a glossary of terms [here](https://help.github.com/articles/github-glossary/).
+Don't worry too much about these now, but if you ever have a question you can find a glossary of terms [here](https://help.github.com/articles/github-glossary/).
 
 Today, we're mostly concerned with "Issues".
 
 Code on GitHub lives in repositories, and these repositories can have list of issue that the project collaborators identify. These issues might be about bugs, enhancements, goals, or general questions. Issues are basically discussion threads with original posters, comments, and the ability to paste in images, links, and example code.
 
-Today, you'll be creating and "issue" that's all about your final project proposal. 
+Today, you'll be creating and "issue" that's all about your final project proposal.
+
+This is the GitHub repository for the campus map website: https://github.com/pennstategeog467/campus-map
+This is a list of all the open issues for this repository: https://github.com/pennstategeog467/campus-map/issues
+
+You can open a new issue to write about your topic logging into GitHub and then going to this URL: https://github.com/pennstategeog467/campus-map/issues/new
+
+
