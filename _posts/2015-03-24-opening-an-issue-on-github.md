@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Using GitHub to Track Project Issues
-excerpt: "Using GitHub to document our progress and challenges."
-modified: 2015-3-24
-tags: 
+excerpt: Using GitHub to document our progress and challenges.
+modified: {}
+tags: null
 author: aaron_dennis
 comments: true
-image:
-  feature: 
-  credit: 
-  creditlink: 
+image: 
+  feature: null
+  credit: null
+  creditlink: null
+published: true
 ---
 
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+GitHub is a place to collaboratively work on projects. It's a good place for our code to live and it gives us the option to host live web pages. Think of GitHub as essentially similar to something like our course management system ANGEL. Like ANGEL, we can use GitHub to share files and communicate.
